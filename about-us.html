@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+    
+    
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>e-Blood Donation</title>
+    <style type="text/css">
+      .animate {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .navbar-top .top-search {
+              display: none;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 30px 0px;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 25px 0px;
+            }
+            .navbar-top .top-search .form-control:focus {
+              border-color: transparent;
+              outline: 0;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+            }
+            .navbar-top .top-search .input-group-btn > .btn {
+              padding: 14px 16px;
+              border-radius: 0px;
+            }
+            .navbar-top .top-search .input-group-btn > .btn-default {
+              background-color: rgb(245, 245, 245);
+            }
+
+            @media screen and (min-width: 768px) {
+              .navbar-top .top-search {
+                background-color: rgb(235, 235, 235);
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                -webkit-transform: rotateX(-90deg);
+                -moz-transform: rotateX(-90deg);
+                -o-transform: rotateX(-90deg);
+                -ms-transform: rotateX(-90deg);
+                transform: rotateX(-90deg);
+                -webkit-transform-origin: 0 0 0;
+                -moz-transform-origin: 0 0 0;
+                -o-transform-origin: 0 0 0;
+                -ms-transform-origin: 0 0 0;
+                transform-origin: 0 0 0;
+                visibility: hidden;
+              }
+              .navbar-top .top-search.open {
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                -o-transform: rotateX(0deg);
+                -ms-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                visibility: visible;  
+              }
+              .navbar-top .top-search > .container {
+                padding: 0px;
+              }    
+          }
+
+          .footer1 {
+           background: #0E1A2E;
+           padding: 30px 0 0 0;
+           font-size: 12px;
+           color: #999;
+           }
+
+           .footer1 .panel-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #ccc;
+            margin: 0 0 20px;
+            }
+            .footer1 .panel {
+             margin-bottom: 30px;
+            }
+            p {
+             margin: 0 0 10px;
+             }
+
+             .contact ul {
+             padding: 0px;
+              }
+
+           ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+           }
+           .footer2 {
+            background: #070E1A;
+            padding: 15px 0;
+            color: #777;
+            font-size: 13px;
+            }
+            .panel {
+             margin-bottom: 0px;
+             background-color: transparent;
+             border: 1px solid transparent;
+             border-radius: 0px;
+             box-shadow: none;
+            }
+            .footer2 p {
+             margin: 0;
+             font-size: 13px;
+            }
+
+            .jumbotron {
+              background-color: #00253D;
+             }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar-inverse navbar navbar-default navbar-fixed-top [ navbar-top animate ]" role="banner" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,1.16),0 2px 10px 0 rgba(0,0,0,1.12); background: #070E1A;">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/blood-logo.png" alt="logo" style="height: 72px; width: 107px;"></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li class="active"><a href="about-us.html">About Us</a></li>
+              <li><a href="services.html">FAQs</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+              <li class="[ hidden-xs ]">
+                <a href="#toggle-search" class="[ animate ]">
+                  <span class="[ glyphicon glyphicon-search ]"></span>
+                </a>
+              </li>                      
+            </ul>
+          </div>
+        </div><!--/.container-->
+        <div class="[ top-search animate ]">
+          <div class="[ container ]">
+            <form action="http://bootsnipp.com/search" method="GET" role="search">
+              <div class="[ input-group ]">
+                <input type="text" class="[ form-control ]" name="q" placeholder="Please enter the location">
+                <span class="[ input-group-btn ]">
+                  <button class="[ btn btn-danger ]" type="reset">
+                    <span class="[ glyphicon glyphicon-remove ]"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="about-us" style="margin-top: 16px;">
+      <div class="jumbotron sectionBox">
+        <div class="container">
+          <div class="center wow fadeInDown">
+            <h2 style="color: aliceblue;">About The Team</h2>
+            <p class="lead" style="color: aquamarine;">we all are beginners, not so much experinced, we had an idea about the blood donation we found a best team and we work togetger for the implementation of blood donation system through a website.</p>
+          </div>
+        </div>
+      </div>  
+      <!-- about us slider -->
+      <section>
+        <div class="container">  
+          <div id="about-slider">
+            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators visible-xs">
+                <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-slider" data-slide-to="1"></li>
+                <li data-target="#carousel-slider" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" style="margin-top: -30px;">
+                <div class="item active">
+                  <img src="img/16.JPG" class="img-responsive" alt="" style="width: 100%; height: 550px;">
+                </div>
+                <div class="item">
+                  <img src="img/17.JPG" class="img-responsive" alt="" style="width: 100%; height: 550px;">
+                </div> 
+                <div class="item">
+                  <img src="img/18.jpg" class="img-responsive" alt="" style="width: 100%; height: 550px;">
+                </div> 
+              </div>
+              <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+              <a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+            </div> <!--/#carousel-slider-->
+          </div><!--/#about-slider-->
+        </div>
+      </section>
+      <!-- Our Skill -->
+      <div class="jumbotron sectionBox"> 
+        <div class="skill-wrap clearfix">
+          <div class="center wow fadeInDown">
+            <h2 style="color: aliceblue;">Our Skill</h2>
+            <p class="lead" style="color: aquamarine;">we all have professional skills as well as communication skills. these helps us to make our future bright. and many more skills we have. </p>
+          </div>
+        </div><!--/.our-skill-->
+      </div>  
+      <!-- our-team -->
+      <div class="container">  
+        <div class="team">
+          <div class="center wow fadeInDown">
+            <h2>Team of Developers</h2>
+            <p class="lead">we are four member in our team. planner, developers, implementer and tester. we worked hard for this project together.</p>
+          </div>
+          <div class="row clearfix">
+            <div class="col-md-4 col-sm-6"> 
+              <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="media">
+                  <div class="pull-left">
+                    <a href="#"><img class="media-object img-circle img-thumbnail img-responsive" src="img/atul.jpg" alt="" style="height: 213px; border: 2px solid #E40F0F;"></a>
+                  </div>
+                  <div class="media-body">
+                    <h4>ATUL SAINI</h4>
+                    <h5>DEVELOPER</h5>
+                    <ul class="tag clearfix">
+                      <li class="btn"><a href="#">WEB</a></li>
+                      <li class="btn"><a href="#">Ui</a></li>
+                      <li class="btn"><a href="#">Ux</a></li>
+                      <li class="btn"><a href="#">Editor</a></li>
+                    </ul>
+                  
+                    <ul class="social_icons">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
+                </div><!--/.media -->
+                  <p> I am a B.tech final year student, of computer science and engineering. i am a developer. i worked hard for my own dream. blood donation online system is one of my dream project which i have already done.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-md-offset-2"> 
+              <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="media">
+                  <div class="pull-left">
+                    <a href="#">
+                      <img class="media-object img-circle img-thumbnail img-responsive" src="img/vikas1.jpg" alt="" style="height: 213px; border: 2px solid #E40F0F;">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4>VIKAS SINGH</h4>
+                    <h5>Editor and mentor</h5>
+                    <ul class="tag clearfix">
+                      <li class="btn"><a href="#">Web</a></li>
+                      <li class="btn"><a href="#">Ui</a></li>
+                      <li class="btn"><a href="#">Ux</a></li>
+                      <li class="btn"><a href="#">Editor</a></li>
+                    </ul>
+                    <ul class="social_icons">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
+                </div><!--/.media -->
+                  <p>I am a B.tech final year student, of computer science and engineering. i am a Editor and mentor. i worked hard for my own dream project. blood donation online system is one of my dream project which i have already done.</p>
+                </div>
+              </div>          
+            </div>
+
+            <div class="row team-bar">
+              <div class="first-one-arrow hidden-xs">
+                <hr>
+              </div>
+              <div class="first-arrow hidden-xs">
+                <hr> <i class="fa fa-angle-up"></i>
+              </div>
+              <div class="second-arrow hidden-xs">
+                <hr> <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="third-arrow hidden-xs">
+                <hr> <i class="fa fa-angle-up"></i>
+              </div>
+              <div class="fourth-arrow hidden-xs">
+                <hr> <i class="fa fa-angle-down"></i>
+              </div>
+            </div> <!--skill_border-->       
+
+            <div class="row clearfix">   
+              <div class="col-md-4 col-sm-6 col-md-offset-2"> 
+                <div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <div class="media">
+                    <div class="pull-left">
+                      <a href="#">
+                        <img class="media-object img-circle img-thumbnail img-responsive" src="img/aman1.jpg" alt="" style="height: 213px; border: 2px solid #E40F0F;">
+                      </a>
+                    </div>
+
+                    <div class="media-body">
+                      <h4>AMAN PR. GUPTA</h4>
+                      <h5>Photo Editor</h5>
+                      <ul class="tag clearfix">
+                        <li class="btn"><a href="#">Web</a></li>
+                        <li class="btn"><a href="#">Ui</a></li>
+                        <li class="btn"><a href="#">Ux</a></li>
+                        <li class="btn"><a href="#">Photoshop</a></li>
+                      </ul>
+                      <ul class="social_icons">
+                        <li>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li> 
+                        <li>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!--/.media -->
+                  <p>I am a B.tech final year student, of computer science and engineering. i am a photo editor and mentor. i worked hard for my own dream. blood donation online system is one of my dream project which i have already done.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-md-offset-2">
+                <div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <div class="media">
+                    <div class="pull-left">
+                      <a href="#"><img class="media-object img-circle img-thumbnail img-responsive" src="img/anurag.jpg" alt="" style="height: 213px; border: 2px solid #E40F0F;"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4>ANURAG MISHRA</h4>
+                      <h5>PLANNER</h5>
+                      <ul class="tag clearfix">
+                        <li class="btn"><a href="#">Web</a></li>
+                        <li class="btn"><a href="#">Ui</a></li>
+                        <li class="btn"><a href="#">Ux</a></li>
+                        <li class="btn"><a href="#">Planning</a></li>
+                      </ul>
+                      <ul class="social_icons">
+                        <li>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li> 
+                        <li>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!--/.media -->
+                  <p>I am a B.tech final year student, of computer science and engineering. i am a planner. i worked hard for my own dream. blood donation online system is one of my dream project which i have already done.</p>
+                </div>
+              </div>
+            </div>  <!--/.row-->
+          </div><!--section-->
+        </div><!--/.container-->
+      </div>  
+    </section><!--/about-us-->
+  
+    
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 panel">
+            <h3 class="panel-title">Lates News</h3>
+            <div class="panel-body">
+              <p>Reports add that Waugh's son Conan weighed less than 800g and he was born 15 weeks early. He suffered a haemorrhage in his lungs. Doctors suggested a blood transfusion when he was just two days old.
+
+              "His early arrival was a huge shock, but we called him our little fighter. Although the blood he received was only a tiny amount we immediately started calling blood transfusions 'the tonic' as the improvement in his health was so remarkable," she said. Doctors suggested a second transfusion for Conan a few weeks later when his oxygen levels dipped again. 
+
+              Finally, he was allowed home after 112 days in hospital. "He is now fit and healthy, and so very precious to us," she said.</p>
+            </div>
+          </div>
+          <div class="col-md-4 panel contact">
+            <h3 class="panel-title">Contact Info</h3>
+            <div class="panel-body">
+              <p>If you need any type of help regarding blood donation.</p>
+              <ul>
+                <li><i class="fa fa-phone"></i>  +919838036897, +918574849590</li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> vikaskumarsingh9838@gmail.com, amanprakash120103@gmail.com</a></li>
+                <li><i class="fa fa-flag"></i>B.tech hostel ccs university meerut.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 panel">
+            <h3 class="panel-title">Follow Us</h3>
+            <div class="panel-body">
+              <p class="follow-me-icons"> <a href="https://twitter.com/Atul1234saini"><i class="fa fa-twitter fa-2"></i></a> <a href=""><i class="fa fa-dribbble fa-2"></i></a> <a href="https://github.com/vikasrock"><i class="fa fa-github fa-2"></i></a> <a href="http://www.facebook.com/aman.prakash.5205"><i class="fa fa-facebook fa-2"></i></a> <a href=""><i class="fa fa-youtube fa-2"></i></a> <a href=""><i class="fa fa-pinterest fa-2"></i></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="simplenav"> <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="services.html">FAQs</a> </p>
+            </div>
+          </div>
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="text-right"> Copyright © 2015.  <a href="#" rel="develop"></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×</button>
+            <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration - <a href="#"></a></h4>
+          </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                    <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="Login">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email1" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                              Submit</button>
+                            <a href="javascript:;">Forgot your password?</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane" id="Registration">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Name</label>
+                          <div class="col-sm-10">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Mr.</option>
+                                  <option>Ms.</option>
+                                  <option>Mrs.</option>
+                                </select>
+                              </div>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="Name" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="mobile" class="col-sm-2 control-label">
+                            Mobile</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="col-sm-2 control-label">
+                            Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                
+                                <div class="form-group">
+                                  <label for="password" class="col-sm-4 control-label">
+                                   Blood</label>
+                                  <div class="col-sm-8">
+                                    <div class="controls">
+                                      <select class="form-control">
+                                        <option>select....</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="email" class="col-sm-4 control-label">
+                                    Sex</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control">
+                                      <option>select...</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Other</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Age</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Age" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Weight</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="weight" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label class="col-sm-2 control-label">Address</label>
+                                  <div class="col-sm-10">
+                                    <textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="button" class="btn btn-primary btn-sm">
+                              Save & Continue</button>
+                            <button type="button" class="btn btn-default btn-sm">
+                              Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                    <div id="OR" class="hidden-xs">
+                      OR</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row text-center sign-with">
+                        <div class="col-md-12">
+                          <h3>Sign in with</h3>
+                        </div>
+                      <div class="col-md-12">
+                        <div class="btn-group btn-group-justified">
+                          <a href="#" class="btn btn-primary">Facebook</a>
+                          <a href="#" class="btn btn-danger">Google</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(function() { 
+
+    $('a[href="#toggle-search"], .navbar-top .top-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+    event.preventDefault();
+    $('.navbar-top .top-search .input-group > input').val('');
+    $('.navbar-top .top-search').toggleClass('open');
+    $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+    if ($('.navbar-top .top-search').hasClass('open')) {
+      /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+      setTimeout(function() { 
+        $('.navbar-top .top-search .form-control').focus();
+      }, 100);
+    }     
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.which == 27 && $('.navbar-top .top-search').hasClass('open')) {
+      $('a[href="#toggle-search"]').trigger('click');
+    }
+  });
+    
+});
+    </script>
+    <script type="text/javascript">
+      $('#myModal').modal('hidden');
+    </script>
+  </body>
+</html>

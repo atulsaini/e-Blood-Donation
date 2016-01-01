@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-Blood Donation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+      .outer-box {
+       padding: 15px;
+       border: 1px solid #d4d4d4;
+       box-shadow: 0 1px 6px rgba(0, 0, 0, 1.175);
+       border-radius: 3px;
+       background-color: rgb(6, 116, 210);
+       margin-top: 1em;
+       height: 404px;
+       }
+
+       .outer-box1 {
+       padding: 15px;
+       border: 1px solid #d4d4d4;
+       box-shadow: 0 1px 6px rgba(0, 0, 0, 1.175);
+       border-radius: 3px;
+       background-color: rgb(6, 116, 210);
+       margin-top: 1em;
+       }
+
+       .animate {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .navbar-top .top-search {
+              display: none;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 30px 0px;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 25px 0px;
+            }
+            .navbar-top .top-search .form-control:focus {
+              border-color: transparent;
+              outline: 0;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+            }
+            .navbar-top .top-search .input-group-btn > .btn {
+              padding: 14px 16px;
+              border-radius: 0px;
+            }
+            .navbar-top .top-search .input-group-btn > .btn-default {
+              background-color: rgb(245, 245, 245);
+            }
+
+            @media screen and (min-width: 768px) {
+              .navbar-top .top-search {
+                background-color: rgb(235, 235, 235);
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                -webkit-transform: rotateX(-90deg);
+                -moz-transform: rotateX(-90deg);
+                -o-transform: rotateX(-90deg);
+                -ms-transform: rotateX(-90deg);
+                transform: rotateX(-90deg);
+                -webkit-transform-origin: 0 0 0;
+                -moz-transform-origin: 0 0 0;
+                -o-transform-origin: 0 0 0;
+                -ms-transform-origin: 0 0 0;
+                transform-origin: 0 0 0;
+                visibility: hidden;
+              }
+              .navbar-top .top-search.open {
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                -o-transform: rotateX(0deg);
+                -ms-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                visibility: visible;  
+              }
+              .navbar-top .top-search > .container {
+                padding: 0px;
+              }    
+          }
+
+          .footer1 {
+           background: #0E1A2E;
+           padding: 30px 0 0 0;
+           font-size: 12px;
+           color: #999;
+           }
+
+           .footer1 .panel-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #ccc;
+            margin: 0 0 20px;
+            }
+            .footer1 .panel {
+             margin-bottom: 30px;
+            }
+            p {
+             margin: 0 0 10px;
+             }
+
+             .contact ul {
+             padding: 0px;
+              }
+
+           ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+           }
+           .footer2 {
+            background: #070E1A;
+            padding: 15px 0;
+            color: #777;
+            font-size: 13px;
+            }
+            .panel {
+             margin-bottom: 0px;
+             background-color: transparent;
+             border: 1px solid transparent;
+             border-radius: 0px;
+             box-shadow: none;
+            }
+            .footer2 p {
+             margin: 0;
+             font-size: 13px;
+            }
+            .outer-box h2 {
+                color: white;
+            }
+            .outer-box p {
+                color: wheat;
+            }
+
+            .outer-box1 h2 {
+                color: white;
+            }
+            .outer-box1 p {
+                color: wheat;
+            }
+
+            .yu {background: url('img/9.jpg') center fixed; 
+                height: 500px;
+                margin-top: -49px;
+               }
+            .yu1 {background: url('img/10.jpg') center fixed; 
+                height: 500px;
+                margin-top: -49px;
+               }
+            .yu2 {background: url('img/11.jpg') center fixed; 
+                height: 500px;
+                margin-top: -49px;
+               }
+            .jumbotron {
+        background-color: #00253D;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+        <nav class="navbar-inverse navbar navbar-default navbar-fixed-top [ navbar-top animate ]" role="banner" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,1.16),0 2px 10px 0 rgba(0,0,0,1.12); background: #070E1A;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/blood-logo.png" alt="logo" style="height: 72px; width: 107px;"></a>
+                </div>
+    
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="active"><a href="services.html">FAQs</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+                        <li class="[ hidden-xs ]">
+                          <a href="#toggle-search" class="[ animate ]">
+                            <span class="[ glyphicon glyphicon-search ]"></span>
+                          </a>
+                        </li>                       
+                    </ul>
+                </div>
+            </div><!--/.container-->
+            <div class="[ top-search animate ]">
+              <div class="[ container ]">
+                <form action="http://bootsnipp.com/search" method="GET" role="search">
+                  <div class="[ input-group ]">
+                    <input type="text" class="[ form-control ]" name="q" placeholder="Please enter the location">
+                    <span class="[ input-group-btn ]">
+                      <button class="[ btn btn-danger ]" type="reset">
+                        <span class="[ glyphicon glyphicon-remove ]"></span>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav><!--/nav-->
+        
+    </header><!--/header-->
+
+    <section id="feature" class="" style="margin-top: 19px; background: #f2f2f2;">
+    <div class="jumbotron sectionBox">
+      <div class="container">
+        <div class="outer-box11">
+          <div class="center wow fadeInDown" style="color: aquamarine;">
+            <h1 style="color: aliceblue;">Frequently Asked Questions</h1>
+            <p class="lead">you can read the general arised questions below...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section style="background:#C4C4F5; margin-top:-42px; height: 941px;">
+       <div class="container wow fadeInDown" style="padding-top: 45px;">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Answers for FAQs
+              on Donating Blood In which situations do people generally donate blood?</strong>
+              </h2> 
+              <p><em>There are three types of blood donors: -</em></p>
+
+              <p>(1) PROFESSIONAL DONORS – They sell their blood, which can be infectious and can transmit very dangerous diseases to the recipient. It is illegal to take blood from any professional donor.</p>
+
+              <p>(2) REPLACEMENT DONATION – Healthy relatives and friends of the patient give their blood, of any group, to the blood bank. In exchange, the required number of units in the required blood group is given.</p>
+              
+              <div class="accordion-group">
+              <div id="collapseTwo" class="collapse">
+              <p>(3) VOLUNTARY DONATION- Here a donor donates blood voluntarily. The blood can be used for any patient even without divulging the identity of the donor. This is the best type of blood donation where a motivated human being gives blood in an act of selfless service.</p>
+              </div>
+              <button class="SeeMore1" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Answers for FAQs on Transfusion In which situations do patients need blood transfusion?</strong></h2>
+              <p>There are many situations in which patients need blood to stay alive:</p>
+              <p>(a) A patient needs blood after a major accident in which there is loss of blood.</p>
+              <p>(b)No major surgery is performed without blood as there is bound to be blood loss.</p>
+              <p>(c)On an average, for every open heart surgery about 6 units of blood is required.</p>
+              <div class="accordion-group">
+                <div id="collapseTwo" class="collapse">
+                  <p>(d)In miscarriage or childbirth, cases the patient may need large amount of blood to be transfused for saving her life and also the child’s.</p>
+                  <p>(e) For patients with blood diseases like severe Anaemias especially Aplastic Anaemias, Leucaemias (blood cancer), Haemophilia (bleeding disorder), Thalassemia etc. repeated blood transfusions are the only solution.</p>
+                  <p>(f)In many other situations like poisoning, drug reactions, shock, burns, blood transfusion is the only way to save precious human life.</p>
+                </div>
+                  <button class="SeeMore2" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Are there any other benefits of blood donation?</strong></h2>
+              <p>Yes, blood donation is a noble, selfless service! It gives the donor a feeling of joy and contentment. Also this is an expression of love for Mankind, as blood knows no caste, color, creed, religion or race, country, continent or sex.</p>
+              <h2><strong>Can a donor work after donating blood?</strong></h2>
+              <p>Of course! Routine work is absolutely fine after the initial  rest. Rigorous physical work should be avoided for a few hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Can blood of animals be transfused to human beings?</strong></h2>
+              <p>Scientists have tried a lot but so far they are not successful. Only the blood of a human being can be transfused to a human patient.</p>
+              <h2><strong>Does a donor need to rest after donating blood?</strong></h2>
+              <p>Yes. The donor needs rest, preferably lying down, so that the amount of blood that has been donated soon gets poured into the circulation from the body pools in a natural way. The donor should take it easy for about 10-15 minutes.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Do you test all the collected blood?</strong></h2>
+              <p>Yes. ALL the blood in the blood bank is tested for following,<em>using the latest technology:</em>
+              <p>· Hepatitis B C </p>
+              <p>· Malarial parasite</p>
+              <p>· HIV I II (AIDS)</p>
+              <p>· Venereal disease (Syphilis)</p>
+              <p>· Blood Group
+              <p>· Before issuing blood, compatibility tests (cross matching) is done.</p>
+              <div class="accordion-group">
+                <div id="collapseTwo" class="collapse">
+                  <p>Please note that test results are highly confidential and not shared with anyone. In case of identification of any disease, result is shared with the donor only.</p>
+                </div>
+                <button class="SeeMore2" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Do any diseases debar a donor from giving blood?
+                  </strong></h2>
+              <p>There are many conditions in which we advise not to donate blood. These health conditions could mean that you may not be able to temporarily donate either for a period of 6 months, one year or may also mean that you may never donate blood. These conditions are essential for your safety and also for the safety of those receiving blood. Mentioned below are the deferral conditions.</p>
+            </div>
+          </div>
+        </div>
+       </section>   
+      </div>
+    </section>
+
+    <!-- <section></section> -->
+    <div class="yu">
+      <div class="col-xs-12">
+        <div class="col-md-12 text-center y">
+    
+        </div>
+      </div>
+    </div>
+
+    <section id="feature" class="" style="background:#C4C4F5; height: 1012px;">
+      <div class="container wow fadeInDown">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Does a donor need to do anything special before donation?</strong></h2>
+              <p><em>We want your donation experience to be pleasant. Please remember :</em></p>
+              <p>(a) Eat well-balanced food before you donate. You should not be on an empty stomach.</p>
+              <p>(b) Tell us the name and dosage of any medications you are taking. Medications will not keep you from donating, but the reason for taking them might.</p>
+              <p>(c) If you have taken alcohol within 24hrs you cannot donate.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Does the donor suffer from any harmful effects after donating blood donation?</strong></h2>
+              <p>Absolutely not, rather a donor after having given blood voluntarily gets a feeling of great pleasure, peace and bliss. Soon, within a period of 24-48 hours, the same amount of new blood gets formed in the body, which helps the donor in many ways. His own body resistance improves, the circulation improves, and he himself feels healthier than before.</p> 
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Does the needle hurt the entire time?</strong></h2>
+              <p>There may be a little sting when the needle is inserted, but there should be no pain during the donation.</p>
+              <h2><strong>For Female Donors</strong></h2>
+              <p>(a) While lactating.</p>
+              <p>(b) During menstrual period (6 to 7 days)</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>FREQUENCY OF BLOOD TYPES</strong></h2>
+              <p>O+ 1 person in 3</p>
+              <p>O- 1 person in 15</p>
+              <p>A+ 1 person in 3</p>
+              <p>A- 1 person in 16</p>
+              <p>B+ 1 person in 12</p>
+              <p>B- 1 person in 67</p>
+              <p>AB+ 1 person in 29</p>
+              <p>AB- 1 person in 167</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How frequently a donor can donate blood?</strong></h2>
+              <p>A healthy person can donate after every 56 days. Three months time between donations is a very safe interval.</p>
+
+              <h2><strong>How long will it take for the body to replenish the blood?</strong></h2>
+              <p>The body replaces blood volume or plasma within 24 hours. Red cells need about 21 days for complete replacement.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How is blood formed?</strong></h2>
+              <p>Blood consists of RBCs, WBCs, platelets suspended in plasma. In early embryonic life blood cells are formed in liver and spleen. But by the fifth month the Haemopoisis (i.e., formation of blood) occurs in bone marrow and lymphatic tissues. At birth the entire bone marrow is red and active. Gradually as the child grows, the marrow remains red only in the flat bones and vertebrae. The RBC, grannulocytes of WBC and platelets are produced mainly by bone marrow. The lymphocytes, monocytes, plasma cells are formed in the lymphoid and Reticulo Endothermic tissues.</p>
+              <div class="accordion-group">
+                <div id="collapseTwo" class="collapse">
+                  <p>The orderly proliferation of the cells in the bone marrow and their release into circulation is carefully regulated according to the needs of body. Every day, new blood cells are being produced in the bone marrow and every day old cells are dying and being removed from the body.
+                  Red blood cells have a life of 120 days and when it becomes old and senile it is thrown out. White cells live for a few days and platelets for a few hours. Thus, daily new cells are added to the circulation and old are removed from it.</p>
+                </div>
+                <button class="SeeMore2" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>
+
+    <!-- <section></section> -->
+    <div class="yu1">
+      <div class="col-xs-12">
+        <div class="col-md-12 text-center y">
+         
+        </div>
+      </div>
+    </div>
+    
+    <section id="feature" class="" style="background:#C4C4F5; height: 1012px;">
+      <div class="container wow fadeInDown">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How long can blood be stored?</strong></h2>
+              <p>Whole blood can be stored up to 35 days, when kept in CPDA anti coagulant solution and refrigerated at 2-4 deg C. But the demand is so great that blood hardly ever remains in storage for so long and is used much before expiry. The various blood components can be stored as under.</p>
+              <p>(a) Platelet Concentrate - 5 days</p>
+              <p>(b) Platelet Apherises – 5 days</p>
+              <p>(c) Platelet Rich Plasma - 5 days</p>
+              <p>(d) Packed Cells – 35 days</p>
+              <div class="accordion-group">
+                <div id="collapseTwo" class="collapse">
+                  <p>(e) Fresh Frozen Plasma - 1 year</p>
+                  <p>(f) Cryo Anti Hemophilic Factor – 1 year</p>
+                  <p>(g) Cryo Poor Plasma – 5 years</p>
+                </div>
+                <button class="SeeMore2" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How long does it take to donate blood?</strong></h2>
+              <p>The whole process takes about an hour. It starts with registration, a health history and a mini-physical. Then comes the actual donation, which usually takes less than 10-12 minutes. Afterward, you will be asked to spend a few minutes in the "canteen" where you can have a light refreshment before returning to your normal activities.</p>
+
+              <h2><strong>Is donating blood safe?</strong></h2>
+              <p>Donating blood is a safe process. Needles and bags used to collect blood are used only once and then discarded, making spread of infection to the donor not possible.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How long does the donation take?</strong></h2>
+              <p>The procedure is done by skilled, specially trained doctors/nurses and takes three to eight minutes. However, from start to finish (filling form, post donation rest, etc) the entire process should take 30 to 40 minutes.</p>
+              <h2><strong>What is blood? How much blood does a person have?</strong></h2>
+              <p>Blood is the red colored fluid flowing continuously in our body’s circulatory system. About 1/12th of the body weight of a healthy individual is blood. On an average there are about 5 – 6 liters of blood present.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>How often can one give blood?</strong></h2>
+              <p>You can donate whole blood once every 56 days. The waiting period between donations can be different for other blood components. For example, donating only platelets in a process called apheresis requires only a 3 day wait before a person can give again. Donating two units of red blood cells through a similar process doubles the waiting period to 112 days.</p>
+              <h2><strong>Who is a healthy donor?</strong></h2>
+              <p>Any person within the age group of 18-60 years with a body weight as minimum 45kgs, and having haemoglobin content as minimum 12.5 gm%.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Is it safe to donate blood and what happens during blood donation?</strong></h2>
+              <p>Donating blood is safe and simple. We use only totally sterile disposable blood bags and needles. The actual donation process works like this:</p>
+              <p>(a) You will be asked a few questions about your health.</p>
+              <p>(b) You will go through a simple medical checkup including blood pressure, and pulse.</p>
+              <div class="accordion-group">
+                <div id="collapseTwo" class="collapse">
+                  <p>(c) A drop of blood will be obtained from your finger tip to test for Hemoglobin% and your group.</p>
+                  <p>(d) You will proceed to a donor bed where your arm will be cleaned with antiseptic.</p>
+                  <p>(e) During the donation process, you will donate 350ml or 450ml depending on your weight.</p>
+                  <p>(f) After the process is over, you will rest for about 5 minutes.</p>
+                  <p>(g) Following your donation, you will be given refreshment.</p>
+                  <p>Please, remember to take your donor card</p>
+                </div>
+                <button class="SeeMore2" data-toggle="collapse" href="#collapseTwo">See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="outer-box">
+              <h2><strong>Permanent Deferral (Life Long):</strong></h2>
+              <p>(a) Abnormal bleeding disorder.</p>
+              <p>(b) Heart, Kidney, Liver Disorders, Thyroid Disorder</p>
+              <p>(c) Epilepsy, mental disorders</p>
+              <p>(d) Tuberculosis, Leprosy</p>
+              <p>(e) Asthma</p>
+              <p>(f) Cancer</p>
+              <p>(g)  Insulin dependent diabetics, Uncontrolled High BP.</p>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>
+
+    <div class="yu2">
+      <div class="col-xs-12">
+        <div class="col-md-12 text-center y">
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="footer1 wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 panel">
+            <h3 class="panel-title">Lates News</h3>
+            <div class="panel-body">
+              <p>Reports add that Waugh's son Conan weighed less than 800g and he was born 15 weeks early. He suffered a haemorrhage in his lungs. Doctors suggested a blood transfusion when he was just two days old.
+
+              "His early arrival was a huge shock, but we called him our little fighter. Although the blood he received was only a tiny amount we immediately started calling blood transfusions 'the tonic' as the improvement in his health was so remarkable," she said. Doctors suggested a second transfusion for Conan a few weeks later when his oxygen levels dipped again. 
+
+              Finally, he was allowed home after 112 days in hospital. "He is now fit and healthy, and so very precious to us," she said.</p>
+            </div>
+          </div>
+          <div class="col-md-4 panel contact">
+            <h3 class="panel-title">Contact Info</h3>
+            <div class="panel-body">
+              <p>If you need any type of help regarding blood donation.</p>
+              <ul>
+                <li><i class="fa fa-phone"></i>  +919838036897, +918574849590</li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> vikaskumarsingh9838@gmail.com, amanprakash120103@gmail.com</a></li>
+                <li><i class="fa fa-flag"></i>B.tech hostel ccs university meerut.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 panel">
+            <h3 class="panel-title">Follow Us</h3>
+            <div class="panel-body">
+              <p class="follow-me-icons"> <a href="https://twitter.com/Atul1234saini"><i class="fa fa-twitter fa-2"></i></a> <a href=""><i class="fa fa-dribbble fa-2"></i></a> <a href="https://github.com/vikasrock"><i class="fa fa-github fa-2"></i></a> <a href="http://www.facebook.com/aman.prakash.5205"><i class="fa fa-facebook fa-2"></i></a> <a href=""><i class="fa fa-youtube fa-2"></i></a> <a href=""><i class="fa fa-pinterest fa-2"></i></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+
+    <div class="footer2 wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="simplenav"> <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="services.html">FAQs</a> </p>
+            </div>
+          </div>
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="text-right"> Copyright © 2015. <a href="http://webthemez.com/" rel="develop"></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×</button>
+            <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration - <a href="#"></a></h4>
+          </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                    <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="Login">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email1" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                              Submit</button>
+                            <a href="javascript:;">Forgot your password?</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane" id="Registration">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Name</label>
+                          <div class="col-sm-10">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Mr.</option>
+                                  <option>Ms.</option>
+                                  <option>Mrs.</option>
+                                </select>
+                              </div>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="Name" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="mobile" class="col-sm-2 control-label">
+                            Mobile</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="col-sm-2 control-label">
+                            Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="password" class="col-sm-4 control-label">
+                                   Blood</label>
+                                  <div class="col-sm-8">
+                                    <div class="controls">
+                                      <select class="form-control">
+                                        <option>select....</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="email" class="col-sm-4 control-label">
+                                    Sex</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control">
+                                      <option>select...</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Other</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Age</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Age" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Weight</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="weight" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label class="col-sm-2 control-label">Address</label>
+                                  <div class="col-sm-10">
+                                    <textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="button" class="btn btn-primary btn-sm">
+                              Save & Continue</button>
+                            <button type="button" class="btn btn-default btn-sm">
+                              Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                    <div id="OR" class="hidden-xs">
+                      OR</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row text-center sign-with">
+                        <div class="col-md-12">
+                          <h3>Sign in with</h3>
+                        </div>
+                      <div class="col-md-12">
+                        <div class="btn-group btn-group-justified">
+                          <a href="#" class="btn btn-primary">Facebook</a>
+                          <a href="#" class="btn btn-danger">Google</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+    <script type="text/javascript">
+
+      $(function() { 
+
+    $('a[href="#toggle-search"], .navbar-top .top-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+    event.preventDefault();
+    $('.navbar-top .top-search .input-group > input').val('');
+    $('.navbar-top .top-search').toggleClass('open');
+    $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+    if ($('.navbar-top .top-search').hasClass('open')) {
+      /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+      setTimeout(function() { 
+        $('.navbar-top .top-search .form-control').focus();
+      }, 100);
+    }     
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.which == 27 && $('.navbar-top .top-search').hasClass('open')) {
+      $('a[href="#toggle-search"]').trigger('click');
+    }
+  });
+    
+});
+    </script>
+    
+
+    <script type="text/javascript">
+      $('.SeeMore2').click(function(){
+        var $this = $(this);
+        $this.toggleClass('SeeMore2');
+        if($this.hasClass('SeeMore2')){
+            $this.text('See More');         
+        } else {
+            $this.text('See Less');
+        }
+    });
+
+      $('.SeeMore1').click(function(){
+        var $this = $(this);
+        $this.toggleClass('SeeMore1');
+        if($this.hasClass('SeeMore1')){
+            $this.text('See More');         
+        } else {
+            $this.text('See Less');
+        }
+    });
+    </script>
+    <script type="text/javascript">
+      $('#myModal').modal('hidden');
+    </script>
+  </body>
+</html>

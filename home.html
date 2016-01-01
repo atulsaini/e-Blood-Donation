@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-Blood Donation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/responsive.cs" rel="stylesheet"> -->
+    <style type="text/css">
+      .nav-tabs {
+        margin-bottom: 15px;
+       }
+      .sign-with {
+        margin-top: 25px;
+        padding: 20px;
+       }
+      div#OR {
+       height: 30px;
+       width: 30px;
+       border: 1px solid #C2C2C2;
+       border-radius: 50%;
+       font-weight: bold;
+       line-height: 28px;
+       text-align: center;
+       font-size: 12px;
+       float: right;
+       position: absolute;
+       right: -16px;
+      top: 40%;
+      z-index: 1;
+      background: #DFDFDF;
+     }
+
+     .outer-box {
+       border: 1px solid #d4d4d4;
+       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+       border-radius: 3px;
+       background-color:  rgb(53, 65, 76);
+       height: 365px;
+       }
+
+     .outer-box1 {
+       border: 1px solid #d4d4d4;
+       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+       border-radius: 3px;
+       background-color:  rgb(53, 65, 76);
+       height: 393px;
+       }
+
+       .jumbotron {
+        background-color: #00253D;
+      }
+
+
+       .sectionBox {
+         padding: 35px 0 40px;
+         }
+
+       .highlight:first-child {
+        border: none;
+        }
+
+
+       .highlight {
+         margin-top: 40px;
+        }
+
+       .highlight {
+         margin-top: 40px;
+         border-left: 1px solid rgba(255, 255, 255, 0.16);
+        }
+
+       .h-caption {
+         text-align: center;
+        }
+
+
+       .h-caption h4 {
+         color: #fff;
+         font-size: 22px;
+         font-weight: normal;
+         margin-bottom: 20px;
+         }
+
+
+       .h-caption i {
+         display: block;
+         font-size: 54px;
+         color: #fff;
+         margin-bottom: 36px;
+         }
+
+       .jumbotron p {
+         font-size: inherit;
+         color: #979797;
+         font-size: 16px;
+         padding: 0px 10px;
+        }
+
+       .jumbotron p {
+         margin-bottom: 15px;
+         font-size: 21px;
+         font-weight: 200;
+        }
+
+       p {
+          margin: 0 0 10px;
+         }
+
+       p {
+         display: block;
+         -webkit-margin-before: 1em;
+         -webkit-margin-after: 1em;
+         -webkit-margin-start: 0px;
+         -webkit-margin-end: 0px;
+         }
+
+       .box {
+           padding: 50px 30px;
+           background: #fff;
+           border-bottom: 1px solid #e9e9e9;
+           position: relative;
+           }
+          .box {
+            background: #f3f3f3;
+           }
+           .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            vertical-align: middle;
+            -webkit-transition: opacity 300ms;
+            -moz-transition: opacity 300ms;
+            -o-transition: opacity 300ms;
+            transition: opacity 300ms;
+            }
+          .portfolio-item .overlay .preview {
+            position: relative;
+            top: 50%;
+            display: inline-block;
+            margin-top: -20px;
+           }
+          .portfolio-item:hover .overlay {
+            opacity: 1;
+           }
+
+         .portfolio-item .item-inner {
+           text-align: center;
+           background: #fff;
+           padding: 10px;
+           border-bottom: 1px solid #e1e1e1;
+           width: 285px;
+          }
+
+         .portfolio-items {
+          margin-right: -20px;
+         }
+
+        .portfolio-item .portfolio-image {
+          position: relative;
+          }
+
+       .portfolio-item img {
+         width: 100%;
+         height: 230px;
+        }
+
+       .portfolio-item .item-inner {
+        margin: 0 20px 20px 0;
+        text-align: center;
+        background: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #e1e1e1;
+        }
+
+      .portfolio-items, .portfolio-filter {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+      .portfolio-item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        vertical-align: middle;
+        transition: opacity 300ms;
+      }
+
+      .portfolio-item .overlay .preview {
+        position: relative;
+        top: 50%;
+        display: inline-block;
+        margin-top: -20px;
+      }
+
+      .btn {
+        font-weight: 300;
+        border: 0;
+        }
+
+      .portfolio-item h5 {
+        margin: 0;
+        padding: 10px 0 0 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+     h5 { color: #777;
+        font-weight: 300;
+      }
+
+      .footer1 {
+           background: #0E1A2E;
+           padding: 30px 0 0 0;
+           font-size: 12px;
+           color: #999;
+           }
+
+           .footer1 .panel-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #ccc;
+            margin: 0 0 20px;
+            }
+            .footer1 .panel {
+             margin-bottom: 30px;
+            }
+            p {
+             margin: 0 0 10px;
+             }
+
+             .contact ul {
+             padding: 0px;
+              }
+
+           ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+           }
+           .footer2 {
+            background: #070E1A;
+            padding: 15px 0;
+            color: #777;
+            font-size: 13px;
+            }
+            .panel {
+             margin-bottom: 0px;
+             background-color: transparent;
+             border: 1px solid transparent;
+             border-radius: 0px;
+             box-shadow: none;
+            }
+            .footer2 p {
+             margin: 0;
+             font-size: 13px;
+            }
+
+            .animate {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .navbar-top .top-search {
+              display: none;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 30px 0px;
+              }
+            .navbar-top .top-search .form-control {
+              background-color: rgb(235, 235, 235);
+              border-radius: 0px;
+              border-width: 0px;
+              font-size: 24px;
+              padding: 25px 0px;
+            }
+            .navbar-top .top-search .form-control:focus {
+              border-color: transparent;
+              outline: 0;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+            }
+            .navbar-top .top-search .input-group-btn > .btn {
+              padding: 14px 16px;
+              border-radius: 0px;
+            }
+            .navbar-top .top-search .input-group-btn > .btn-default {
+              background-color: rgb(245, 245, 245);
+            }
+
+            @media screen and (min-width: 768px) {
+              .navbar-top .top-search {
+                background-color: rgb(235, 235, 235);
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                -webkit-transform: rotateX(-90deg);
+                -moz-transform: rotateX(-90deg);
+                -o-transform: rotateX(-90deg);
+                -ms-transform: rotateX(-90deg);
+                transform: rotateX(-90deg);
+                -webkit-transform-origin: 0 0 0;
+                -moz-transform-origin: 0 0 0;
+                -o-transform-origin: 0 0 0;
+                -ms-transform-origin: 0 0 0;
+                transform-origin: 0 0 0;
+                visibility: hidden;
+              }
+              .navbar-top .top-search.open {
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                -o-transform: rotateX(0deg);
+                -ms-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                visibility: visible;  
+              }
+              .navbar-top .top-search > .container {
+                padding: 0px;
+              }    
+          }
+
+          .c-list{
+            font-size: 22px;
+            font-weight: 800;
+          }
+
+    </style>
+  </head>
+  <body class="homepage" enctype="multipart">
+
+    <header id="header">
+        <nav class="navbar-inverse navbar navbar-default navbar-fixed-top [ navbar-top animate ]" role="banner" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,1.16),0 2px 10px 0 rgba(0,0,0,1.12); background: #070E1A;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html"><img src="img/blood-logo.png" alt="logo" style="height: 72px; width: 107px;"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">FAQs</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+                        <li class="[ hidden-xs ]">
+                          <a href="#toggle-search" class="[ animate ]">
+                            <span class="[ glyphicon glyphicon-search ]"></span>
+                          </a>
+                        </li>                       
+                    </ul>
+                </div>
+            </div><!--/.container-->
+            <div class="[ top-search animate ]">
+              <div class="[ container ]">
+                <form action="#" method="GET" role="search">
+                  <div class="[ input-group ]">
+                    <input type="text" class="[ form-control ]" name="q" placeholder="Please enter the location">
+                    <span class="[ input-group-btn ]">
+                      <button class="[ btn btn-danger ]" type="reset">
+                        <span class="[ glyphicon glyphicon-remove ]"></span>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav><!--/nav-->
+        </header><!--/header-->
+
+    <section id="main-slider" class="no-margin" style="margin-top: 82px;">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image: url(img/slider/blood-donation1.jpg); height:550px;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Blood Donation will cost you nothing but it will save a life!</h1>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                 
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(img/slider/bg2.jpg); height:550px;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(img/slider/who_021251.jpg); height:550px;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+              
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Features</h2>
+                <p class="lead">Blood Donation is service to Humankind,By Donating Blood you help a needy and save a precious life.
+                Transfusion of blood every year saves Millions of life all over the world every year,Their are Millions of Blood Donors all over the world But still their are number of countries who don’t have adequate number of blood suppliers and face the challenge of blood supply to the patients i the country However WHO is trying to make available adequate blood to the needy patients all over the world in order of this World Blood Donors Day is celebrated on 14th June every year to promote Blood Donation all over the world,and one of the best way to promote a cause is sharing short quotes and slogans related to the cause here we will share some of the best slogans and quotes regarding blood donation.</p>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <div class="jumbotron sectionBox wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default wow fadeInDown" style="margin-bottom: 15px;">
+          <div class="panel-heading c-list" style="color: teal;">
+            <span class="title">Add Blood Requests</span>
+            <ul class="pull-right c-controls">
+              <li style="list-style:none;">
+                <a a href="#" data-toggle="modal" data-target="#myModal" title="Add Contact"><i class="glyphicon glyphicon-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+                
+          <div class="row" style="display: none;">
+            <div class="col-xs-12">
+              <div class="input-group c-search">
+                <input type="text" class="form-control" id="contact-list-search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+                
+          <ul class="list-group wow fadeInDown" id="contact-list">
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Scott Stevens</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="#"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: A
+                +</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Seth Frazier</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="#"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: AB+</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/women/90.jpg" alt="Jean Myers" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Jean Myers</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: A-</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Todd Shelton</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: o+</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="outer-box wow fadeInDown">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 highlight">
+            <div class="h-caption">
+              <h4><i class="fa fa-users fa-2x circle"></i>FACTS</h4>
+            </div>
+            <div class="h-body text-center">
+              <p>Blood cannot be manufactured. It can only come as a gift from people.
+ 
+              Anyone who is in good health is at least 17 years old, and weighs at least 50 Kgs may donate Blood every 56 days.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 highlight">
+            <div class="h-caption">
+              <h4><i class="fa fa-bar-chart-o fa-2x circle"></i>NEED</h4>
+            </div>
+            <div class="h-body text-center">
+              <p>Every 2 seconds someone needs blood. Accident victims,patients undergoing major surgeries require whole blood, where your blood after testing is used directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default wow fadeInDown" style="margin-bottom: 15px;">
+          <div class="panel-heading c-list" style="color: teal;">
+            <span class="title">Donors</span>
+            <ul class="pull-right c-controls">
+            </ul>
+          </div>
+                
+          <div class="row" style="display: none;">
+            <div class="col-xs-12">
+              <div class="input-group c-search">
+                <input type="text" class="form-control" id="contact-list-search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+                
+          <ul class="list-group wow fadeInDown" id="contact-list">
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Todd Shelton</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: o-</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+
+
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/women/34.jpg" alt="Rosemary Porter" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Rosemary Porter</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: B+</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="list-group-item">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/women/56.jpg" alt="Debbie Schmidt" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Debbie Schmidt</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: AB-</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="list-group-item" style="color: #101010;">
+              <div class="col-xs-12 col-sm-3">
+                <img src="http://api.randomuser.me/portraits/women/76.jpg" alt="Glenda Patterson" class="img-responsive img-circle" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <span class="name">Glenda Patterson</span><br/>
+                <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="+91-9411844351"></span>
+                <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <a href="#" class="btn btn-warning btn-raised">Blood Group: B-</a>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="outer-box1 wow fadeInDown">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 highlight">
+              <div class="h-caption">
+                <h4><i class="fa fa-users fa-2x circle"></i>MYTHS</h4>
+              </div>
+              <div class="h-body text-center">
+                <p>You can resume your normal activities after donating blood, though you are asked to refrain from exercise or heavy weight lifting for twelve hours after donation.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 highlight">
+              <div class="h-caption">
+                <h4><i class="fa fa-bar-chart-o fa-2x circle"></i>THINGS TO KNOW</h4>
+              </div>
+              <div class="h-body text-center">
+                <p>Tense and relax your calf and thigh muscles and move your legs and feet during and immediately after your donation.</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>        
+    <section id="portfolio" class="box wow fadeInDown">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/1.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/2.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/3.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/4.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>      
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/5.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/6.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/7.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-3">
+                <li class="portfolio-item apps isotope-item wow fadeInDown" style="list-style: none;">
+                  <div class="item-inner">
+                    <div class="portfolio-image">
+                      <img src="img/8.jpg" alt="">
+                      <div class="overlay">
+                        <a class="preview btn btn-danger" title="" href="img/8.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h5></h5>
+                  </div>
+                </li>
+              </div>      
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="services" class="service-item">
+     <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Nervous ! Read this :</h2>
+                <p class="lead">IMPORTANT THING READ IT AND CHANGE YOUR OPINION</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services1.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Will I feel tired ?</h3>
+                            <p>NO.........You will not feel drained or tired.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services2.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Will I be bedridden?</h3>
+                            <p>You can resume all your normal activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services3.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Will I be in danger?</h3>
+                            <p>You will have surplus blood after the donation.</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services4.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">How much will it hurt?</h3>
+                            <p>No, you will not feel any pain. it will never hurt you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services5.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Feel dizzy after this?</h3>
+                            <p>You will not feel uncomfortable. you always feel safe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/services/services6.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">OMG! I'll get AIDS!</h3>
+                            <p>No! Make sure disposable syringes are used.</p>
+                        </div>
+                    </div>
+                </div>                                                
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown">
+                    <div class="accordion">
+                        <h2>Why Donate Blood?</h2>
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Some Health Benefits
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <!-- <img class="img-responsive" src="images/accordion1.png"> -->
+                                        </div>
+                                        <div class="media-body">
+                                             <h4>why donate blood</h4>
+                                             <p>You will receive a mini  physical to check your:
+                                              Pulse,
+                                              Blood pressure,
+                                              Body temperature,
+                                              Hemoglobin.</p>
+                                        </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  What Can You Expect?
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Have a light meal and plenty to drink.
+                                Bring your donor card, driver's license or two other forms of identification.
+                                Bring the names of medications you are taking.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  The Actual Donation Process:
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                registration:Our staff and volunteers will sign you in and go over basic eligibility and donation information.
+                                mini physical:You will answer some questions during a private and confidential interview
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  some more steps
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                The donation:The actual donation takes about 8-10 minutes, during which you will be seated comfortably.
+                                Refreshment:After donating, you should have a snack and something to drink in the refreshments area. 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#middle-->
+
+    <section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2>Have a question or need a custom quote?</h2>
+                            <p>Then you can contact any one of the given contact number. we are happy to help you. we providing you our best facilities. cell +919838036897, +918574849590, +919411844351, +919457858731
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->    
+    </section><!--/#conatcat-info-->
+
+    <div class="footer1 wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 panel">
+            <h3 class="panel-title">Lates News</h3>
+            <div class="panel-body">
+              <p>Reports add that Waugh's son Conan weighed less than 800g and he was born 15 weeks early. He suffered a haemorrhage in his lungs. Doctors suggested a blood transfusion when he was just two days old.
+
+              "His early arrival was a huge shock, but we called him our little fighter. Although the blood he received was only a tiny amount we immediately started calling blood transfusions 'the tonic' as the improvement in his health was so remarkable," she said. Doctors suggested a second transfusion for Conan a few weeks later when his oxygen levels dipped again. 
+
+              Finally, he was allowed home after 112 days in hospital. "He is now fit and healthy, and so very precious to us," she said.</p>
+            </div>
+          </div>
+          <div class="col-md-4 panel contact">
+            <h3 class="panel-title">Contact Info</h3>
+            <div class="panel-body">
+              <p>If you need any type of help regarding blood donation.</p>
+              <ul>
+                <li><i class="fa fa-phone"></i>  +919838036897, +918574849590</li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i>  vikaskumarsingh9838@gmail.com, amanprakash120103@gmail.com</a></li>
+                <li><i class="fa fa-flag"></i>  B.tech hostel ccsu meerut</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 panel">
+            <h3 class="panel-title">Follow Us</h3>
+            <div class="panel-body">
+              <p class="follow-me-icons"> <a href="https://twitter.com/Atul1234saini"><i class="fa fa-twitter fa-2"></i></a> <a href=""><i class="fa fa-dribbble fa-2"></i></a> <a href="https://github.com/vikasrock"><i class="fa fa-github fa-2"></i></a> <a href="http://www.facebook.com/aman.prakash.5205"><i class="fa fa-facebook fa-2"></i></a> <a href=""><i class="fa fa-youtube fa-2"></i></a> <a href=""><i class="fa fa-pinterest fa-2"></i></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+
+    <div class="footer2 wow fadeInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="simplenav"> <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="services.html">FAQs</a></a> </p>
+            </div>
+          </div>
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="text-right"> Copyright © 2015. <a href="#" rel="develop"></a> </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels --> 
+      </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×</button>
+            <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration - <a href="#"></a></h4>
+          </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                    <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="Login">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email1" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                              Submit</button>
+                            <a href="javascript:;">Forgot your password?</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane" id="Registration">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Name</label>
+                          <div class="col-sm-10">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Mr.</option>
+                                  <option>Ms.</option>
+                                  <option>Mrs.</option>
+                                </select>
+                              </div>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="Name" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="col-sm-2 control-label">
+                            Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="mobile" class="col-sm-2 control-label">
+                            Mobile</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="col-sm-2 control-label">
+                            Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="password" class="col-sm-4 control-label">
+                                   Blood</label>
+                                  <div class="col-sm-8">
+                                    <div class="controls">
+                                      <select class="form-control">
+                                        <option>select....</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="email" class="col-sm-4 control-label">
+                                    Sex</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control">
+                                      <option>select...</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Other</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Age</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Age" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="text" class="col-sm-4 control-label">
+                                    Weight</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="mobile" placeholder="weight" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label class="col-sm-2 control-label">Address</label>
+                                  <div class="col-sm-10">
+                                    <textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-10">
+                            <button type="button" class="btn btn-primary btn-sm">
+                              Save & Continue</button>
+                            <button type="button" class="btn btn-default btn-sm">
+                              Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                    <div id="OR" class="hidden-xs">
+                      OR</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row text-center sign-with">
+                        <div class="col-md-12">
+                          <h3>Sign in with</h3>
+                        </div>
+                      <div class="col-md-12">
+                        <div class="btn-group btn-group-justified">
+                          <a href="#" class="btn btn-primary">Facebook</a>
+                          <a href="#" class="btn btn-danger">Google</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(function() { 
+
+    $('a[href="#toggle-search"], .navbar-top .top-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+    event.preventDefault();
+    $('.navbar-top .top-search .input-group > input').val('');
+    $('.navbar-top .top-search').toggleClass('open');
+    $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+    if ($('.navbar-top .top-search').hasClass('open')) {
+      /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+      setTimeout(function() { 
+        $('.navbar-top .top-search .form-control').focus();
+      }, 100);
+    }     
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.which == 27 && $('.navbar-top .top-search').hasClass('open')) {
+      $('a[href="#toggle-search"]').trigger('click');
+    }
+  });
+    
+});
+    </script>
+
+    <script type="text/javascript">
+      $('#myModal').modal('hidden');
+    </script>
+  </body>
+</html>
